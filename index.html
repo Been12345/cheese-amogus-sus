@@ -25,19 +25,22 @@
 
   <br>
 
-  <button onclick="buttonclicked()">not a suspiciouser button</button>
+  <button id="button" onclick="buttonclicked()">not a suspiciouser button</button>
 
   <br>
 
   <p> cheese is amazing </p>
-  
   <script>
-    
+    let button = document.getElementById("button")
+
+    console.log(button)
+
     function buttonclicked() {
-  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-}
-button.addEventListener("click", buttonclicked);
-  
+      alert("e")
+      console.log("cheese")
+      window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }
+    button.addEventListener("onclick", buttonclicked);
   </script>
 
 </body>
